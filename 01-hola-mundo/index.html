@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso JavaScript🚀</title>
+  </head>
+  <body>
+    <h1>Hola desde el HTML</h1>
+    <div id="app"></div>
+    <script src="https://unpkg.com/vue@3.1.2/dist/vue.global.js"></script>
+    <script>
+      const { createApp, ref } = Vue;
+      const App = {
+        setup() {
+          const name = ref("Daniel");
+          const count = ref(0);
+          const increment = () => count.value++;
+          return { name, count, increment };
+        },
+        template: `<button @click="increment">Hola {{name}}</button><b>{{count}}</b>`,
+      };
+      createApp(App).mount("#app");
+    </script>
+    <script>
+      console.log("Hola mundo en JavaScript🚀");
+      const hola = "Hola mundo";
+      document.write(hola);
+      //   alert("Hola desde la alerta");
+      //   alert(1);
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- NO SE DEBE HACER -->
+    <!-- <script src="js/main.js">
+      alert("Hola")
+    </script> -->
+  </body>
+</html>
