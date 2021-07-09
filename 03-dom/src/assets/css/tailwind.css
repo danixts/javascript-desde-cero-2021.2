@@ -1,0 +1,6 @@
+/*  resetea todos los estilos */
+@tailwind base;
+/* creacion de componentes */
+@tailwind components;
+/* utilidades */
+@tailwind utilities;
