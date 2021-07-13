@@ -1,22 +1,23 @@
-const p = document.querySelector("#hola"); // para id # | class .
-console.log(p);
-p.textContent =
-  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, accusamus!";
+const app = document.getElementById('app')
+const app2 = document.getElementById('app2')
 
-document.body.querySelectorAll("h1")[1].textContent = "Desde el archivo";
+const fragment = document.createDocumentFragment()
 
-console.log(document.head.querySelectorAll("link"));
+const ul = document.createElement('ul')
 
-// forma correcta de selecionar ids
-const grid = document.getElementById("grid");
+// Colocar siempre content en template
+const templateLi = document.getElementById('template-li').content
 
-const title = grid.querySelector(".bg-red-200").querySelector("p");
-title.textContent = "texto modificado";
+for (let i = 1; i <= 20; i++) {
+  const b = templateLi.querySelector('strong')
+  const li = templateLi.querySelector('li')
+  b.textContent = `✅ Item ${i}`
+  li.dataset.id = `${i}`
+  const cloneTemplate = templateLi.cloneNode(true)
+  fragment.appendChild(cloneTemplate)
+}
 
-const lista = grid.querySelectorAll("div");
+// ul.appendChild(fragment)
+app.appendChild(fragment)
+// app2.appendChild(ul)
 
-lista.forEach((el,index) => {
-    el.querySelector("p").textContent = `TEXTO ${index + 1}`
-    el.querySelector("p").style.color = "green"
-    el.querySelector("p").style.backgroundColor = "purple"
-})

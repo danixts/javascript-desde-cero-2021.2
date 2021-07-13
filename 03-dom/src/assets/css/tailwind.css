@@ -4,3 +4,8 @@
 @tailwind components;
 /* utilidades */
 @tailwind utilities;
+
+.bg-red-800-mod {
+  background-color: rgba(233, 27, 27, 0.774);
+  color: white;
+}
