@@ -4,7 +4,7 @@
   "description": "DOM javascript - tailwind",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/assets/css/tailwind.css -o src/assets/css/main.css -w",
+    "dev": "npx tailwindcss -i ./src/assets/css/tailwind.css -o src/assets/css/main.css -w -m",
     "build": "tsc .",
     "start": "echo \"Iniciando el script\" && exit 1"
   },
