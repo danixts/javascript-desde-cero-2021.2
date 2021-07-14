@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwindcss - DOM</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-gray-900 text-4xl text-center">Formulario</h1>
+      <form
+        class="
+          flex flex-col
+          bg-gray-200
+          rounded-md
+          max-w-2xl
+          space-y-3
+          py-12
+          px-6
+          mt-8
+        "
+      >
+        <div class="flex flex-col">
+          <label for="name">Nombre:</label>
+          <input type="text" name="name" id="name" class="py-2 mt-1" />
+        </div>
+        <div class="flex flex-col">
+          <label for="planet">Planeta:</label>
+          <input type="text" name="planet" id="planet" class="py-2 mt-1" />
+        </div>
+        <div class="flex flex-col">
+          <label for="age">Edad:</label>
+          <input type="text" name="age" id="age" class="py-2 mt-1" />
+        </div>
+
+        <button
+          type="submit"
+          id="enviar"
+          class="bg-green-500 mt-4 text-white px-4 py-3 rounded-md"
+        >
+          Enviar
+        </button>
+      </form>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

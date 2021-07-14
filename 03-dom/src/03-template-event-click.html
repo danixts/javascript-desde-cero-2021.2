@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwindcss - DOM</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button
+        id="boton-increment"
+        class="bg-green-500 text-white py-2 px-4 font-bold mt-4"
+      >
+        +
+      </button>
+      <span>0</span>
+      <button
+        id="boton-decrement"
+        class="bg-green-500 text-white py-2 px-4 font-bold mt-4"
+      >
+        -
+      </button>
+    </div>
+    <ul id="app"></ul>
+    <div id="app2"></div>
+    <template id="template-li">
+      <li><strong class="text-red-700 font-normal"></strong></li>
+    </template>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

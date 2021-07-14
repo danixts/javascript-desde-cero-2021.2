@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwindcss - DOM</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="bg-gray-300 p-4 mt-5 rounded-md border-2 border-gray-900"
+        id="box"
+      >
+        <div>
+          <div>
+            <b class="min-w-[120px]">RED</b>
+            <input type="range" id="red" min="0" max="255" value="0" />
+            <span>0</span>
+          </div>
+          <div>
+            <b>GREEN</b>
+            <input type="range" id="green" min="0" max="255" value="0" />
+            <span>0</span>
+          </div>
+          <div>
+            <b>BLUE</b>
+            <input type="range" id="blue" min="0" max="255" value="0" />
+            <span>0</span>
+          </div>
+        </div>
+        <div>
+          <span id="text-value"></span>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

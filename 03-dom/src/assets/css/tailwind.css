@@ -5,7 +5,19 @@
 /* utilidades */
 @tailwind utilities;
 
-.bg-red-800-mod {
-  background-color: rgba(233, 27, 27, 0.774);
-  color: white;
+:root {
+  --mx: 0;
+  --my: 0;
+}
+
+.background {
+  background: url("https://www.tonica.la/__export/1584386415176/sites/debate/img/2020/03/16/goku_saludando_portada.jpg_463833556.jpg")
+    no-repeat center/cover;
+  clip-path: circle(16% at var(--mx, 50%) var(--my, 50%));
+  transition: clip-path 0.2s;
+  @apply inset-0 fixed flex items-center justify-center w-full h-full;
+}
+
+.background:active {
+  clip-path: circle(30% at var(--mx, 50%) var(--my, 50%));
 }

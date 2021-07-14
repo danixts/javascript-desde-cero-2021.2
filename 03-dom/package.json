@@ -4,8 +4,8 @@
   "description": "DOM javascript - tailwind",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/assets/css/tailwind.css -o src/assets/css/main.css -w -m",
-    "build": "tsc .",
+    "dev": "npx tailwindcss -i ./src/assets/css/tailwind.css -o src/assets/css/main.css -w",
+    "build": "npx tailwindcss -i ./src/assets/css/tailwind.css -o src/assets/css/main.css -w -m",
     "start": "echo \"Iniciando el script\" && exit 1"
   },
   "keywords": [
