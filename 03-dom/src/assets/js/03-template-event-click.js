@@ -30,18 +30,18 @@ let count = 2
 
 increment.addEventListener('click', () => {
     span.textContent = `${count++}`
-    let index = 2
-    const limit = 20
-    while (count <= limit) {
-        if (isPrime(index)) {
-            let span = document.createElement('span')
-            span.textContent = `${index}`
-            span.setAttribute("class", 'm-2 bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-sm p-2')
-            app2.appendChild(span)
-            count++
-        }
-        index++
-    }
+    // let index = 2
+    // const limit = 20
+    // while (count <= limit) {
+    //     if (isPrime(index)) {
+    //         let span = document.createElement('span')
+    //         span.textContent = `${index}`
+    //         span.setAttribute("class", 'm-2 bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-sm p-2')
+    //         app2.appendChild(span)
+    //         count++
+    //     }
+    //     index++
+    // }
 })
 
 decrement.addEventListener('click', () => {
