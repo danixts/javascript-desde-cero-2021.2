@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito de compras en JavaScript</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="bg-gray-900 pt-12 pb-32">
+    <div class="container">
+      <h1
+        class="
+          text-primary-500
+          font-semibold
+          tracking-wider
+          text-3xl text-center
+          mt-4
+          py-8
+        "
+      >
+        Carrito de compras en JavaScript
+      </h1>
+      <!-- BOx -->
+      <div class="flex flex-row -mx-4">
+        <!-- CARDS -->
+        <div
+          id="app-product"
+          class="
+            grid
+            lg:grid-cols-2
+            xl:grid-cols-3
+            gap-6
+            w-full
+            lg:w-6/12
+            xl:w-8/12
+          "
+        ></div>
+        <!-- SIDEBAR -->
+        <div class="w-full lg:w-6/12 xl:w-4/12">
+          <span>Carrito de compras</span>
+        </div>
+      </div>
+    </div>
+    <template id="template-product">
+      <div class="bg-primary-600 rounded-lg group">
+        <img
+          src="assets/img/coco.png"
+          alt="Coco"
+          class="
+            w-full
+            mx-auto
+            transform
+            transition-transform
+            duration-300
+            group-hover:scale-110
+          "
+        />
+        <div class="p-5 bg-primary-200 rounded-b-md">
+          <div class="flex flex-row justify-between items-center">
+            <span class="text-3xl text-primary-700 font-bold uppercase"
+              >Coco</span
+            >
+            <div
+              class="
+                bg-gradient-to-br
+                rounded-md
+                from-primary-500
+                to-primary-800
+              "
+            >
+              <div
+                class="
+                  text-2xl
+                  py-2
+                  px-2
+                  text-white
+                  font-bold
+                  shadow-lg
+                  transition-colors
+                  group-hover:text-primary-200
+                "
+              >
+                20<b class="text-sm ml-2 font-semibold group-hover:text-white"
+                  >BOB</b
+                >
+              </div>
+            </div>
+          </div>
+          <button
+            class="
+              bg-primary-700
+              w-full
+              mt-4
+              py-3
+              shadow-lg
+              rounded-md
+              text-white
+              font-bold
+              text-xl
+              transition-all
+              duration-500
+              hover:bg-primary-800 hover:-translate-y-1
+            "
+          >
+            Comprar
+          </button>
+        </div>
+      </div>
+    </template>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
