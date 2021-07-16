@@ -14,3 +14,7 @@
 /* .title {
   @apply text-primary-500 font-semibold tracking-wider text-3xl text-center mt-4 py-8;
 } */
+
+.u-grid-col-3 {
+  grid-template-rows: 115px auto 60px;
+}
