@@ -1,0 +1,22 @@
+{
+  "name": "05-carrito-compras",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev-test": "cross-env TAILWIND_MODE=watch cross-env NODE_ENV=develpoment postcss tailwind.css -o ./src/assets/css/main.css -w",
+    "dev": "npx tailwindcss -i tailwind.css -o ./src/assets/css/main.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.4"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
