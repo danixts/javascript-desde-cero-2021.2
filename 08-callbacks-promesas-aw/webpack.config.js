@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const env = process.env.NODE_ENV;
 module.exports = {
     mode: env == 'production' || env == 'none' ? env : 'development',
-    entry: './src/main.js',
+    entry: ['@babel/polyfill', './src/main.js'], // fix error async await in webpack
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "[contenthash].bundle.js",
