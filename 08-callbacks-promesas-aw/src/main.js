@@ -1,0 +1,5 @@
+import './tailwind.css'
+import './assets/js/callbacks'
+import './assets/js/promesas'
+import './assets/js/async-await'
+import './assets/js/fetch-api'
